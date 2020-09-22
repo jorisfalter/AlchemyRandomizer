@@ -1,12 +1,22 @@
-body {
-  text-align: center;
-}
 
 div{
   padding: 7% 15%;
   font-height: 1.5;
+  text-align: center;
 }
 
 p {
   font-family: 'Montserrat', sans-serif;
+}
+
+/* .btn {
+
+} */
+
+@media (max-width: 1030px) {
+  div{
+    padding: 7% 2%;
+    font-height: 1.5;
+
+  }
 }

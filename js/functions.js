@@ -20,10 +20,23 @@ var myArray = [
   "I get promoted within two years, I get the highest performance rating on my first feedback <br><br><i> zoals mijn vader, zoals Annelies bij McKinsey</i>"
   ];
 
-var randomItem = myArray[Math.floor(Math.random()*myArray.length)];
+var randomItemArray = [];
+var randomItem;
+var randomItemNr;
 
-// alert( randomItem);
-
-
-var ps = document.querySelector("p");
-ps.innerHTML = randomItem;
+document.querySelector(".btn").onclick = function(){
+  if (myArray.length !== randomItemArray.length){
+    randomItemNr = Math.floor(Math.random()*myArray.length);
+    randomItem = myArray[randomItemNr];
+    while (randomItemArray.includes(randomItemNr)){
+      randomItemNr = Math.floor(Math.random()*myArray.length);
+      randomItem = myArray[randomItemNr];
+    }
+    randomItemArray.push(randomItemNr);
+  }
+  else {
+    alert(randomItemNr);
+  }
+  var ps = document.querySelector("p");
+  ps.innerHTML = randomItem;
+}
