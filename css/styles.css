@@ -1,7 +1,7 @@
 
 div{
   padding: 7% 15%;
-  font-height: 1.5;
+  line-height: 1.5;
   text-align: center;
 }
 
@@ -9,14 +9,22 @@ p {
   font-family: 'Montserrat', sans-serif;
 }
 
-/* .btn {
+.navbar {
+  background-color: #ffb0b0;
+}
 
-} */
+.navbar div {
+  padding: 2% 2%;
+}
+
+#mindfulpause {
+  background-color: #fe7171;
+}
 
 @media (max-width: 1030px) {
   div{
     padding: 7% 2%;
-    font-height: 1.5;
+    line-height: 1.5;
 
   }
 }

@@ -1,3 +1,5 @@
+// Affirmations
+
 var myArray = [
     "I'm thankful I'm the best product manager in the world - My previous challenges guide me to be the best PM in the world <br><br><i>  like Peter van Hees</i>"
   ,
@@ -24,7 +26,8 @@ var randomItemArray = [];
 var randomItem;
 var randomItemNr;
 
-document.querySelector(".btn").onclick = function(){
+
+document.querySelector(".btn-core").onclick = function(){
   if (myArray.length !== randomItemArray.length){
     randomItemNr = Math.floor(Math.random()*myArray.length);
     randomItem = myArray[randomItemNr];
@@ -37,6 +40,48 @@ document.querySelector(".btn").onclick = function(){
   else {
     alert(randomItemNr);
   }
-  var ps = document.querySelector("p");
+
+  var ps = document.querySelector(".p-affirm");
   ps.innerHTML = randomItem;
+}
+
+// Mindfulpause
+
+var myMpArray = [
+  "Do I accept myself just as I am?",
+  "Notice that I notice",
+  "I'm spinning on a planet in the middle of empty space and time. This body is nearly 100% empty space. It's all relative.",
+  "If not now, when?",
+  "What, at this moment, is lacking?",
+  "Is there joy, light- and playfulness in what I’m doing?",
+  "Do I accept my body just as it is? ",
+  "Is this body perfect for the goals I want to achieve? ",
+  "The sounds of silence, sounds come up, and die. The feeling of space around me. I focus on my inner field and become aware of the stillness",
+  "Breath - expand your chest",
+  "I can think, I can wait, I can fast ",
+  "I am thankful for the things I will have achieved in the future",
+  "Why is this important to me?",
+  "Am I aware of my thoughts? Are these thoughts helping me? "
+    ];
+
+var randomItemMpArray = [];
+var randomItemMp;
+var randomItemMpNr;
+
+document.querySelector(".btnMp").onclick = function(){
+  if (myMpArray.length !== randomItemMpArray.length){
+    randomItemMpNr = Math.floor(Math.random()*myMpArray.length);
+    randomItemMp = myMpArray[randomItemMpNr];
+    while (randomItemMpArray.includes(randomItemMpNr)){
+      randomItemMpNr = Math.floor(Math.random()*myMpArray.length);
+      randomItemMp = myMpArray[randomItemMpNr];
+    }
+    randomItemMpArray.push(randomItemMpNr);
+  }
+  else {
+    alert(randomItemMpNr);
+  }
+  var psMp = document.querySelector(".p-mp");
+  psMp.innerHTML = randomItemMp;
+
 }
