@@ -1,4 +1,6 @@
 
+/* Colorhunt - Color Palette 207391 */
+
 div{
   padding: 7% 15%;
   line-height: 1.5;
@@ -19,6 +21,10 @@ p {
 
 #mindfulpause {
   background-color: #fe7171;
+}
+
+#inspiration {
+  background-color: #335d2d;
 }
 
 @media (max-width: 1030px) {
