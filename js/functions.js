@@ -17,7 +17,7 @@ var myArray = [
   ,
   "I am convinced I make my own space <br><br><i> like the best people at Ford, like Tristan Walker</i>"
   ,
-  "I feel best when I’m hungry and physically exercised <br><br><i> like Vadym</i>"
+  "I feel best when I’m hungry and physically exercised <br><br><i> like Pascal Maenhout</i>"
   ,
   "I get promoted within two years, I get the highest performance rating on my first feedback <br><br><i> zoals mijn vader, zoals Annelies bij McKinsey</i>"
   ];
@@ -38,7 +38,7 @@ document.querySelector(".btn-core").onclick = function(){
     randomItemArray.push(randomItemNr);
   }
   else {
-    alert(randomItemNr);
+    alert("That's it!");
   }
 
   var ps = document.querySelector(".p-affirm");
@@ -61,7 +61,7 @@ var myMpArray = [
   "I can think, I can wait, I can fast ",
   "I am thankful for the things I will have achieved in the future",
   "Why is this important to me?",
-  "Am I aware of my thoughts? Are these thoughts helping me? "
+  "Am I aware of my thoughts? Are these thoughts helping me?"
     ];
 
 var randomItemMpArray = [];
@@ -79,9 +79,44 @@ document.querySelector(".btnMp").onclick = function(){
     randomItemMpArray.push(randomItemMpNr);
   }
   else {
-    alert(randomItemMpNr);
+    alert("that's it!");
   }
   var psMp = document.querySelector(".p-mp");
   psMp.innerHTML = randomItemMp;
-
 }
+
+// Inspiration
+var myInsArray = [
+  "Ik denk aan alle goede dingen die kunnen gebeuren, ik schrijf alle goede dingen die kunnen gebeuren op.",
+  "Ik loop door Chaeng Wattana en ik besef dat ik mij nergens iets van moet aantrekken. Wat er ook op mijn pad komt, ik kan het aan.",
+  "Playfulness, ik bulderlach er om.",
+  "Over exact een jaar, hoe belangrijk is dit? En wanneer ik 70 jaar ben?",
+  "Ben ik dankbaar dat ik deze taak in de toekomst tot een goed einde gebracht heb?",
+  "Accepteer ik de huidige situatie?",
+  "Ik doe 5 diepe ademhalingen, 5 lange ademhalingen",
+  "Ik heb dit al 100 keer gedaan, ik weet hoe dit werkt.",
+  "Zal ik het over vijf jaar herinneren wanneer ik actie genomen heb, of wanneer ik passief gebleven ben."
+];
+
+var randomItemInsArray = [];
+var randomItemIns;
+var randomItemInsNr;
+
+$(".btn-insp").click(function(){
+
+  if (myInsArray.length !== randomItemInsArray.length){
+
+    randomItemInsNr = Math.floor(Math.random()*myInsArray.length);
+    randomItemIns = myInsArray[randomItemInsNr];
+    while (randomItemInsArray.includes(randomItemInsNr)){
+      randomItemInsNr = Math.floor(Math.random()*myInsArray.length);
+      randomItemIns = myInsArray[randomItemInsNr];
+    }
+
+    randomItemInsArray.push(randomItemInsNr);
+  }
+  else {
+    alert("that's it!");
+  }
+  var psIns = document.querySelector(".inspiration-p");
+  psIns.innerHTML = randomItemIns;})
