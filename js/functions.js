@@ -1,25 +1,25 @@
 // Affirmations
 
 var myArray = [
-    "I'm thankful I'm the best product manager in the world - My previous challenges guide me to be the best PM in the world <br><br><i>  like Peter van Hees</i>"
+    "Ik ben dankbaar dat ik de beste product manager in de wereld ben - mijn vorige uitdagingen hebben mijn skills alleen versterkt <br><br><i>  zoals Peter van Hees</i>"
   ,
-  "I am as proud as Casteldeffels Joris every day, with a business with 20M in revenue <br><br><i> like myself</i>"
+  "Elke dag heb ik de trots van Casteldefells Joris, met een bedrijf dat 20M omzet geneneert <br><br><i> zoals mezelf</i>"
   ,
-  "I feel the trust growing: I’m holding my stakeholders at the hand every day <br><br><i> like Michael from Flint</i>"
+  "Elke dag voel ik het vertrouwen toenemen: Ik hou mijn stakeholders bij de hand elke dag <br><br><i> zoals Michael van Flint</i>"
   ,
-  "I'm thankful I am present, only living and concentrating on the now, keeping my body still, especially in meetings <br><br><i> like Prateek, Carl, Tom</i>"
+  "Ik hou mijn lichaam stil, ik ben bewust van mijn lichaam en de situatie<br><br><i> Zoals Prateek, Carl, Tom</i>"
   ,
-  "I feel great and confident: My eyes are deliberate, and I smile, my chest full of air - I'm unmovable - my face only shows positive emotions - my happiness and relaxation can’t be disturbed <br><br><i>  like Tony Robbins, like Mark Wiens tasting food</i>"
+  "Mijn ogen stralen energie uit, ik lach, ik adem diep - mijn geluk en relaxheid kan niet verstoord worden <br><br><i>  Zoals Tony Robbins, Zoals Mark Wiens die eten proeft</i>"
   ,
-  "I feel deliberate, I look people in the eyes with a smile <br><br><i> like that Israeli guy at Simple</i>"
+  "I feel deliberate, I look people in the eyes with a smile <br><br><i> zoals de Israeli bij Simple</i>"
   ,
-  "I feel enthusiastic, I'm responsive in a playful way <br><br><i> like Arnaud</i>"
+  "Ik speel met mensen, ik maak mopjes, en lach hard<br><br><i> zoals Arnaud</i>"
   ,
-  "I am convinced I make my own space <br><br><i> like the best people at Ford, like Tristan Walker</i>"
+  "Ik maak mijn eigen rol<br><br><i> zoals de beste mesen bij Ford, zoals Tristan Walker</i>"
   ,
-  "I feel best when I’m hungry and physically exercised <br><br><i> like Pascal Maenhout</i>"
+  "Ik voel me het beste wanneer ik hongerig ben, en fysiek getraind <br><br><i> zoals Pascal Maenhout</i>"
   ,
-  "I get promoted within two years, I get the highest performance rating on my first feedback <br><br><i> zoals mijn vader, zoals Annelies bij McKinsey</i>"
+  "Ik krijg promotie binnen twee jaar, ik krijg de hoogste beoordeling op mijn eerste feedback <br><br><i> zoals mijn vader, zoals Annelies bij McKinsey</i>"
   ];
 
 var randomItemArray = [];
