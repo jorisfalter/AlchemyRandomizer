@@ -11,7 +11,7 @@ var myArray = [
   ,
   "Mijn ogen stralen energie uit, ik lach, ik adem diep - mijn geluk en relaxheid kan niet verstoord worden <br><br><i>  Zoals Tony Robbins, Zoals Mark Wiens die eten proeft</i>"
   ,
-  "I feel deliberate, I look people in the eyes with a smile <br><br><i> zoals de Israeli bij Simple</i>"
+  "Ik kijk mensen in de ogen met een lach, en deel mijn blijheid en bewustheid<br><br><i> zoals de Israeli bij Simple</i>"
   ,
   "Ik speel met mensen, ik maak mopjes, en lach hard<br><br><i> zoals Arnaud</i>"
   ,
