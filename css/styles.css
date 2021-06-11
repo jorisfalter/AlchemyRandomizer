@@ -9,7 +9,6 @@ div{
 
 p {
   font-family: 'Montserrat', sans-serif;
-  font-size: 16px; 
 }
 
 .navbar {
@@ -20,21 +19,23 @@ p {
   padding: 2% 2%;
 }
 
+#core-affirm{
+}
+
 #mindfulpause {
   background-color: #fe7171;
 }
 
 #inspiration {
+}
+
+#audio{
   background-color: #335d2d;
-  color: white;
 }
 
 @media (max-width: 1030px) {
   div{
     padding: 7% 2%;
     line-height: 1.5;
-  }
-  p{
-    font-size: 32px; 
   }
 }
