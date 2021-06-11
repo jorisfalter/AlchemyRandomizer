@@ -120,3 +120,32 @@ $(".btn-insp").click(function(){
   }
   var psIns = document.querySelector(".inspiration-p");
   psIns.innerHTML = randomItemIns;})
+
+  // Audio
+  var myAudioArray = [
+    '<a href = "https://www.youtube.com/watch?v=ZxEHGAY7LbY" target="_blank">Wear Sunscreen</a>',
+    '<a href = "https://www.youtube.com/watch?v=UF8uR6Z6KLc" target="_blank">Steve Jobs Standford</a>'
+  ];
+
+  var randomItemAudioArray = [];
+  var randomItemAudio;
+  var randomItemAudioNr;
+
+  $(".btn-audio").click(function(){
+
+    if (myAudioArray.length !== randomItemAudioArray.length){
+
+      randomItemAudioNr = Math.floor(Math.random()*myAudioArray.length);
+      randomItemAudio = myAudioArray[randomItemAudioNr];
+      while (randomItemAudioArray.includes(randomItemAudioNr)){
+        randomItemAudioNr = Math.floor(Math.random()*myAudioArray.length);
+        randomItemAudio = myAudioArray[randomItemAudioNr];
+      }
+
+      randomItemAudioArray.push(randomItemAudioNr);
+    }
+    else {
+      alert("that's it!");
+    }
+    var psAudio = document.querySelector(".audio-p");
+    psAudio.innerHTML = randomItemAudio;})
