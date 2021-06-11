@@ -61,7 +61,11 @@ var myMpArray = [
   "I can think, I can wait, I can fast ",
   "I am thankful for the things I will have achieved in the future",
   "Why is this important to me?",
-  "Am I aware of my thoughts? Are these thoughts helping me?"
+  "Am I aware of my thoughts? Are these thoughts helping me?",
+  "Ik heb alles te verliezen - en daardoor niets te verliezen",
+  "Hoe zou ik deze dag ervaren als het mijn laatste dag ooit was?",
+  "Kan ik op het eind van deze dag zeggen dat ik een fantastische dag gehad heb - Kan ik op het eind van mijn leven zeggen dat ik een fantastisch leven gehad heb?",
+  "What is the gift in this situation, What would be the best outcome out of this situation?"
     ];
 
 var randomItemMpArray = [];
@@ -95,7 +99,10 @@ var myInsArray = [
   "Accepteer ik de huidige situatie?",
   "Ik doe 5 diepe ademhalingen, 5 lange ademhalingen",
   "Ik heb dit al 100 keer gedaan, ik weet hoe dit werkt.",
-  "Zal ik het over vijf jaar herinneren wanneer ik actie genomen heb, of wanneer ik passief gebleven ben."
+  "Zal ik het over vijf jaar herinneren wanneer ik actie genomen heb, of wanneer ik passief gebleven ben.",
+  "Wat zou Joris doen als dit Joris' eigen bedrijf was?",
+  "Wat zou een coach zoals Wan zeggen, een coach zoals de Udemy PM teacher?",
+  "Een lach is besmettelijk, zowel van mij op anderen, als van anderen op mezelf"
 ];
 
 var randomItemInsArray = [];
