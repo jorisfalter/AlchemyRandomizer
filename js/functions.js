@@ -65,7 +65,9 @@ var myMpArray = [
   "Ik heb alles te verliezen - en daardoor niets te verliezen",
   "Hoe zou ik deze dag ervaren als het mijn laatste dag ooit was?",
   "Kan ik op het eind van deze dag zeggen dat ik een fantastische dag gehad heb - Kan ik op het eind van mijn leven zeggen dat ik een fantastisch leven gehad heb?",
-  "What is the gift in this situation, What would be the best outcome out of this situation?"
+  "What is the gift in this situation, What would be the best outcome out of this situation?",
+  "If today was the last day of my life - Would I go out to do what I was planning to go out to do today?",
+  "Bekijk ik mezelf vanuit de 3e persoon? Is mijn gedrag het gedrag van Richard waardig?"
     ];
 
 var randomItemMpArray = [];
@@ -102,7 +104,9 @@ var myInsArray = [
   "Zal ik het over vijf jaar herinneren wanneer ik actie genomen heb, of wanneer ik passief gebleven ben.",
   "Wat zou Joris doen als dit Joris' eigen bedrijf was?",
   "Wat zou een coach zoals Wan zeggen, een coach zoals de Udemy PM teacher?",
-  "Een lach is besmettelijk, zowel van mij op anderen, als van anderen op mezelf"
+  "Een lach is besmettelijk, zowel van mij op anderen, als van anderen op mezelf",
+  "Besef tijdens het dansen dat je morgen 70 jaar bent, en het dan misschien niet meer kunt",
+  '<a href = "https://docs.google.com/presentation/d/1PElqrN5zazSq8Q5qLZb59wuxR22I5F4QThVZ9HrvtNw/edit#slide=id.p1" target="_blank">Mijn verhaal tot nu</a>'
 ];
 
 var randomItemInsArray = [];
@@ -131,7 +135,9 @@ $(".btn-insp").click(function(){
   // Audio
   var myAudioArray = [
     '<a href = "https://www.youtube.com/watch?v=ZxEHGAY7LbY" target="_blank">Wear Sunscreen</a>',
-    '<a href = "https://www.youtube.com/watch?v=UF8uR6Z6KLc" target="_blank">Steve Jobs Standford</a>'
+    '<a href = "https://www.youtube.com/watch?v=UF8uR6Z6KLc" target="_blank">Steve Jobs Standford</a>',
+    '<a href = "https://www.youtube.com/watch?v=A7jOqYWJUKg&t=895s" target="_blank">Tony Robbins on Tim Ferriss</a>',
+    '<a href = "https://www.youtube.com/watch?v=lsSC2vx7zFQ" target="_blank">How Bad Do You Want It?</a>'
   ];
 
   var randomItemAudioArray = [];
@@ -156,3 +162,36 @@ $(".btn-insp").click(function(){
     }
     var psAudio = document.querySelector(".audio-p");
     psAudio.innerHTML = randomItemAudio;})
+
+
+    // people
+    var myPeopleArray = [
+      'Lucky Number Slevin en the Bourne Identity zijn verkopers!',
+      'Mark Rutte doet een baantje, een projectje',
+      'Cristiano drinkt enkel water',
+      'Mark Rutte zit als een eerste minister op een fiets!',
+      'One does not fulfill one \'s potential by listening to Scheherazade in a gilded hall - One does so by setting forth into the vast unknown, just like Marco Polo when he traveled to China or Columbus when … <br><br><i>Gentleman in Moscow</i>'
+    ];
+
+    var randomItemPeopleArray = [];
+    var randomItemPeople;
+    var randomItemPeopleNr;
+
+    $(".btn-people").click(function(){
+
+      if (myPeopleArray.length !== randomItemPeopleArray.length){
+
+        randomItemPeopleNr = Math.floor(Math.random()*myPeopleArray.length);
+        randomItemPeople = myPeopleArray[randomItemPeopleNr];
+        while (randomItemPeopleArray.includes(randomItemPeopleNr)){
+          randomItemPeopleNr = Math.floor(Math.random()*myPeopleArray.length);
+          randomItemPeople = myPeopleArray[randomItemPeopleNr];
+        }
+
+        randomItemPeopleArray.push(randomItemPeopleNr);
+      }
+      else {
+        alert("that's it!");
+      }
+      var psPeople = document.querySelector(".people-p");
+      psPeople.innerHTML = randomItemPeople;})
